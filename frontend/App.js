@@ -8,31 +8,46 @@ const options1 = [
     { value: '1', label: 'CT' },
     ];
 
+// const options2 = [
+//     { value: '0', label: '0' },
+//     { value: '1', label: '1' },
+//     { value: '2', label: '2' },
+//     { value: '3', label: '3' },
+//     { value: '4', label: '4' },
+//     { value: '5', label: '5' },
+// ];
+
 const options2 = [
-    { value: '0', label: '0' },
-    { value: '1', label: '1' },
-    { value: '2', label: '2' },
-    { value: '3', label: '3' },
-    { value: '4', label: '4' },
+    { value: '4', label: '0 to 4' },
     { value: '5', label: '5' },
 ];
+
+// const options3 = [
+//     { value: '0', label: '0' },
+//     { value: '1', label: '1' },
+//     { value: '2', label: '2' },
+//     { value: '3', label: '3' },
+//     { value: '4', label: '4' },
+//     { value: '5', label: '5' },
+// ];
 
 const options3 = [
-    { value: '0', label: '0' },
-    { value: '1', label: '1' },
-    { value: '2', label: '2' },
-    { value: '3', label: '3' },
-    { value: '4', label: '4' },
+    { value: '4', label: '0 to 4' },
     { value: '5', label: '5' },
 ];
 
+// const options4 = [
+//     { value: '0', label: '0' },
+//     { value: '1', label: '1' },
+//     { value: '2', label: '2' },
+//     { value: '3', label: '3' },
+//     { value: '4', label: '4' },
+//     { value: '5', label: '5' },
+// ];
+
 const options4 = [
-    { value: '0', label: '0' },
-    { value: '1', label: '1' },
-    { value: '2', label: '2' },
-    { value: '3', label: '3' },
-    { value: '4', label: '4' },
-    { value: '5', label: '5' },
+    { value: '3', label: '0 to 3' },
+    { value: '4', label: '4 to 5' },
 ];
 
 const options5 = [
@@ -67,36 +82,46 @@ const options10 = [
 ];
 
 const options11 = [
-    { value: '1', label: 'Greater than 0' },
-    { value: '33', label: 'Greater than 32' },
+    { value: '1', label: '0 to 32' },
+    { value: '33', label: 'Greater than or equal to 33' },
 ];
+
+// const options12 = [
+//     { value: '0', label: '0' },
+//     { value: '1', label: '1' },
+//     { value: '2', label: '2' },
+//     { value: '3', label: '3' },
+//     { value: '4', label: '4' },
+//     { value: '5', label: '5' },
+//     { value: '6', label: '6' },
+//     { value: '7', label: '7' },
+//     { value: '8', label: '8' },
+//     { value: '9', label: '9' },
+//     { value: '10', label: '10' },
+// ];
 
 const options12 = [
-    { value: '0', label: '0' },
-    { value: '1', label: '1' },
-    { value: '2', label: '2' },
-    { value: '3', label: '3' },
-    { value: '4', label: '4' },
-    { value: '5', label: '5' },
-    { value: '6', label: '6' },
-    { value: '7', label: '7' },
-    { value: '8', label: '8' },
-    { value: '9', label: '9' },
-    { value: '10', label: '10' },
+    { value: '7', label: '0 to 7' },
+    { value: '8', label: '8 to 10' },
 ];
 
+// const options13 = [
+//     { value: '5', label: '5' },
+//     { value: '4', label: '4' },
+//     { value: '3', label: '3' },
+//     { value: '2', label: '2' },
+//     { value: '1', label: '1' },
+//     { value: '0', label: '0' },
+//     { value: '-1', label: '-1' },
+//     { value: '-2', label: '-2' },
+//     { value: '-3', label: '-3' },
+//     { value: '-4', label: '-4' },
+//     { value: '-5', label: '-5' },
+// ];
+
 const options13 = [
-    { value: '5', label: '5' },
-    { value: '4', label: '4' },
-    { value: '3', label: '3' },
-    { value: '2', label: '2' },
-    { value: '1', label: '1' },
-    { value: '0', label: '0' },
-    { value: '-1', label: '-1' },
-    { value: '-2', label: '-2' },
-    { value: '-3', label: '-3' },
-    { value: '-4', label: '-4' },
-    { value: '-5', label: '-5' },
+    { value: '1', label: '1 to 5' },
+    { value: '0', label: '0 to -5' },
 ];
 
 const options14 = [
@@ -135,6 +160,7 @@ const param12 = 'totalEliminated';
 const param13 = 'PC1';
 const param14 = 'halfTime';
 
+// get the data from the lambda function using axios and display first element of array under "CT" and second element under "T"
 function App() {
     const [selectedOption1, setSelectedOption1] = useState(null);
     const [selectedOption2, setSelectedOption2] = useState(null);
